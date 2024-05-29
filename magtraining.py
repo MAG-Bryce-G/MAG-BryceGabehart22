@@ -14,4 +14,4 @@ def training():
     </body>
     </html>
     """
-    return 200
+    return message
