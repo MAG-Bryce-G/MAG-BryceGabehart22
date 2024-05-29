@@ -1,5 +1,4 @@
 from flask import Flask
-from flask import render_template
 import gunicorn
 app = Flask(__name__)
 
@@ -7,5 +6,12 @@ app = Flask(__name__)
 @app.route('/')
 def training():
     #construct your message here
-    render_template("index.html")
+    message = """
+    <html>
+    <body>
+    <h1>Training 22</h1>
+    <p>Hi, my name is Bryce.</p>
+    </body>
+    </html>
+    """
     return 200
